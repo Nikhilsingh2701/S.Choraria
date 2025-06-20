@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // 1. Import BrowserRouter
+import { HashRouter } from 'react-router-dom'; // 1. Import BrowserRouter
 import './index.css';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
@@ -11,9 +11,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* 2. Wrap your <Home /> component with <BrowserRouter> */}
-    <BrowserRouter  basename="/s.choraria">
+    <HashRouter  basename="/s.choraria">
       <Home />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
