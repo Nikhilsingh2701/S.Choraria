@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Ensure basename matches your GitHub repo name exactly (case-sensitive) */}
-    <HashRouter basename="/S.Choraria">
+    <HashRouter>
       <Home />
     </HashRouter>
   </React.StrictMode>
