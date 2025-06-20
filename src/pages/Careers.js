@@ -14,7 +14,8 @@ const Careers = () => {
       <div className="page-container">
         <div className="left-section">
           <div className="job-form-wrapper">
-            <img src="/images/careers.webp" alt="Career" className="careerImg" />
+            <img src={`${process.env.PUBLIC_URL}/images/careers.webp`} alt="Career" className="careerImg" />
+
             <div className="job-form-header">
               <p>
                 We are thrilled to know your interest in working for our organization. Please fill up the form below with your details so that we can contact you.

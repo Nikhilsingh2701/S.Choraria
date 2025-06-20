@@ -16,29 +16,29 @@ import 'swiper/css/autoplay';
 
 // --- Data (remains the same) ---
 const teamMembers = [
-  { img: '/images/santosh.webp', name: 'CA Santosh Choraria', position: 'Managing Partner', description: 'Fellow Member of the ICAI.' },
-  { img: '/images/seema.webp', name: 'CA Seema Choraria', position: 'Partner', description: 'Fellow Member of ICAI.' },
-  { img: '/images/ramesh.webp', name: 'CA Ramesh Kumar Verma', position: 'Partner', description: 'Associate Member of ICAI.' },
+  { img: `${process.env.PUBLIC_URL}/images/santosh.webp`, name: 'CA Santosh Choraria', position: 'Managing Partner', description: 'Fellow Member of the ICAI.' },
+  { img: `${process.env.PUBLIC_URL}/images/seema.webp`, name: 'CA Seema Choraria', position: 'Partner', description: 'Fellow Member of ICAI.' },
+  { img: `${process.env.PUBLIC_URL}/images/ramesh.webp`, name: 'CA Ramesh Kumar Verma', position: 'Partner', description: 'Associate Member of ICAI.' },
 ];
 
 const services = [
-  { img: '/images/audit.webp', title: 'AUDIT & ASSURANCE SERVICES', link: '/audit' },
-  { img: '/images/tax.webp', title: 'TAX & LEGAL SUPPORT SERVICES', link: '/tax' },
-  { img: '/images/consult.webp', title: 'BUSINESS & CONSULTANCY SERVICES', link: '/consulting' },
-  { img: '/images/bankruptcy.webp', title: 'IBC SERVICES', link: '/ibc' },
-  { img: '/images/roc.webp', title: 'Company Law Matter', link: '/roc' },
-  { img: '/images/nbfc.webp', title: 'RBI Compliance', link: '/nbfc' },
-  { img: '/images/merge.webp', title: 'Merger SERVICES', link: '/merge' },
+  { img: `${process.env.PUBLIC_URL}/images/audit.webp`, title: 'AUDIT & ASSURANCE SERVICES', link: '/audit' },
+  { img: `${process.env.PUBLIC_URL}/images/tax.webp`, title: 'TAX & LEGAL SUPPORT SERVICES', link: '/tax' },
+  { img: `${process.env.PUBLIC_URL}/images/consult.webp`, title: 'BUSINESS & CONSULTANCY SERVICES', link: '/consulting' },
+  { img: `${process.env.PUBLIC_URL}/images/bankruptcy.webp`, title: 'IBC SERVICES', link: '/ibc' },
+  { img: `${process.env.PUBLIC_URL}/images/roc.webp`, title: 'Company Law Matter', link: '/roc' },
+  { img: `${process.env.PUBLIC_URL}/images/nbfc.webp`, title: 'RBI Compliance', link: '/nbfc' },
+  { img: `${process.env.PUBLIC_URL}/images/merge.webp`, title: 'Merger SERVICES', link: '/merge' },
 ];
 
 const industriesData = [
-  { img: '/images/banking.webp', desc: 'Banking & Finance Sector' },
-  { img: '/images/nonprofit.webp', desc: 'Non-Profit Organisation' },
-  { img: '/images/printing.webp', desc: 'Printing Sector' },
-  { img: '/images/textile.webp', desc: 'Textile Industries' },
-  { img: '/images/realestate.webp', desc: 'Real Estate' },
-  { img: '/images/money.webp', desc: 'NBFC Sector' },
-  { img: '/images/food.webp', desc: 'Restaurant and Food Sector' },
+  { img: `${process.env.PUBLIC_URL}/images/banking.webp`, desc: 'Banking & Finance Sector' },
+  { img: `${process.env.PUBLIC_URL}/images/nonprofit.webp`, desc: 'Non-Profit Organisation' },
+  { img: `${process.env.PUBLIC_URL}/images/printing.webp`, desc: 'Printing Sector' },
+  { img: `${process.env.PUBLIC_URL}/images/textile.webp`, desc: 'Textile Industries' },
+  { img: `${process.env.PUBLIC_URL}/images/realestate.webp`, desc: 'Real Estate' },
+  { img: `${process.env.PUBLIC_URL}/images/money.webp`, desc: 'NBFC Sector' },
+  { img: `${process.env.PUBLIC_URL}/images/food.webp`, desc: 'Restaurant and Food Sector' },
 ];
 
 

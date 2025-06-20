@@ -11,7 +11,8 @@ const Consulting = () => (
       <h1 className="title">Consulting</h1>
     </div>
 
-    <img src="/images/consult.webp" alt="Consulting" className="consultingImg" />
+    <img src={`${process.env.PUBLIC_URL}/images/consult.webp`} alt="Consulting" className="consultingImg" />
+
 
     <hr />
 

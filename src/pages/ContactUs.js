@@ -1,72 +1,44 @@
-// src/pages/ContactUs.js
-
 import React, { useState } from 'react';
 
-// Import shared layout components if you're using that pattern
-// import TopBar from '../components/TopBar';
-// import Header from '../components/Header';
-// import Navbar from '../components/Navbar';
-
 const ContactUs = () => {
-  // === JAVASCRIPT LOGIC STARTS HERE ===
-
-  // 1. Use 'useState' to manage the values of the input fields.
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-
-  // 2. Use 'useState' to manage the success or error message displayed to the user.
   const [statusMessage, setStatusMessage] = useState('');
 
-  // 3. This function handles the form submission.
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the default browser page reload
+    event.preventDefault();
 
-    // Check if any field is empty (we use the state variables, not the DOM)
     if (!name || !email || !message) {
-      // Set an error message
       setStatusMessage({ text: 'All fields are required.', type: 'error' });
       return;
     }
 
-    // --- This is where you would send the data to a backend server ---
     console.log('Form Submitted:', { name, email, message });
-    // ---
 
-    // 4. Simulate a successful submission
     setStatusMessage({ text: 'Thank you! Your message has been sent.', type: 'success' });
-    
-    // 5. Clear the form fields by resetting the state
+
     setName('');
     setEmail('');
     setMessage('');
   };
 
-  // === JSX (HTML-like part) STARTS HERE ===
   return (
     <>
-      {/* If you are putting layout in every page, uncomment these */}
-      {/* <TopBar /> */}
-      {/* <Header /> */}
-      {/* <Navbar /> */}
-
       <div className="divTitle">
         <h1 className="title">Contact Us</h1>
       </div>
 
-      <img src="/images/contact.png" alt="Contact" className="contactImg" />
+      {/* ✅ Fixed image path */}
+      <img src={`${process.env.PUBLIC_URL}/images/contact.png`} alt="Contact" className="contactImg" />
+      
       <hr />
 
       <h2 className="form-title">Write to Us</h2>
 
       <div className="form">
-        {/* The 'onSubmit' event on the form tag is the React way */}
         <form id="form" className="contact-form" onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
-          {/*
-            - 'value' is tied to our 'name' state variable.
-            - 'onChange' updates the 'name' state variable every time the user types.
-          */}
           <input
             type="text"
             id="name"
@@ -95,7 +67,6 @@ const ContactUs = () => {
 
           <button type="submit">Send Message</button>
 
-          {/* 6. Conditionally render the status message below the button */}
           {statusMessage && (
             <div id="form-message" className={statusMessage.type}>
               <p>{statusMessage.text}</p>
@@ -113,7 +84,7 @@ const ContactUs = () => {
             S.Choraria and Associates<br />
             Room no.- 222 , P-41<br />
             Princep Street, Chandni Chowk<br />
-            Kolkata-700072 <br></br>
+            Kolkata-700072 <br />
             Ph No.-  033-40054515
           </p>
         </div>
@@ -131,9 +102,6 @@ const ContactUs = () => {
           ></iframe>
         </div>
       </div>
-
-      {/* If you are putting layout in every page, add your footer here */}
-      {/* <footer className="site-footer">...</footer> */}
     </>
   );
 };

@@ -2,24 +2,22 @@
 // import TopBar from '../components/TopBar';
 // import Header from '../components/Header';
 // import Navbar from '../components/Navbar';
-
 const galleryItems = [
-  { src: "/images/gal1.webp", alt: "Company Annual Meetup" },
-  { src: "/images/gal2.webp", alt: "Project Alpha Completion" },
-  { src: "/images/gal3.webp", alt: "Our Modern Office Space" },
-  { src: "/images/gal4.webp", alt: "Our Dynamic Team" },
-  { src: "/images/gal5.webp", alt: "Industry Seminar" },
-  { src: "/images/gal6.webp", alt: "Project Beta Launch" },
-  { src: "/images/gal7.webp", alt: "Meeting Room Setup" },
-  { src: "/images/gal8.webp", alt: "Team Fun Day" },
-  { src: "/images/gal9.webp", alt: "Team Fun Day" },
-  { src: "/images/gal10.webp", alt: "Team Fun Day" },
-  { src: "/images/gal11.webp", alt: "Team Fun Day" },
-  { src: "/images/gal12.webp", alt: "Team Fun Day" },
-  { src: "/images/gal13.webp", alt: "Team Fun Day" },
-  { src: "/images/gal14.webp", alt: "Team Fun Day" },
-  { src: "/images/gal15.webp", alt: "Team Fun Day"}
-  
+  { src: `${process.env.PUBLIC_URL}/images/gal1.webp`, alt: "Company Annual Meetup" },
+  { src: `${process.env.PUBLIC_URL}/images/gal2.webp`, alt: "Project Alpha Completion" },
+  { src: `${process.env.PUBLIC_URL}/images/gal3.webp`, alt: "Our Modern Office Space" },
+  { src: `${process.env.PUBLIC_URL}/images/gal4.webp`, alt: "Our Dynamic Team" },
+  { src: `${process.env.PUBLIC_URL}/images/gal5.webp`, alt: "Industry Seminar" },
+  { src: `${process.env.PUBLIC_URL}/images/gal6.webp`, alt: "Project Beta Launch" },
+  { src: `${process.env.PUBLIC_URL}/images/gal7.webp`, alt: "Meeting Room Setup" },
+  { src: `${process.env.PUBLIC_URL}/images/gal8.webp`, alt: "Team Fun Day" },
+  { src: `${process.env.PUBLIC_URL}/images/gal9.webp`, alt: "Team Fun Day" },
+  { src: `${process.env.PUBLIC_URL}/images/gal10.webp`, alt: "Team Fun Day" },
+  { src: `${process.env.PUBLIC_URL}/images/gal11.webp`, alt: "Team Fun Day" },
+  { src: `${process.env.PUBLIC_URL}/images/gal12.webp`, alt: "Team Fun Day" },
+  { src: `${process.env.PUBLIC_URL}/images/gal13.webp`, alt: "Team Fun Day" },
+  { src: `${process.env.PUBLIC_URL}/images/gal14.webp`, alt: "Team Fun Day" },
+  { src: `${process.env.PUBLIC_URL}/images/gal15.webp`, alt: "Team Fun Day" }
 ];
 
 const Gallery = () => {
