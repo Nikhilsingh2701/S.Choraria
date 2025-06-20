@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const slides = [
-  '/images/audit.webp',
-  '/images/banking.webp',
-  '/images/consult.webp',
+  `${process.env.PUBLIC_URL}/images/audit.webp`,
+  `${process.env.PUBLIC_URL}/images/banking.webp`,
+  `${process.env.PUBLIC_URL}/images/consult.webp`,
 ];
 
 const Slideshow = () => {
