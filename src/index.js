@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* 2. Wrap your <Home /> component with <BrowserRouter> */}
-    <HashRouter  basename="/S.choraria">
+    <HashRouter  basename="/s.choraria">
       <Home />
     </HashRouter>
   </React.StrictMode>
