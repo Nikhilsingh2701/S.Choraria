@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/S.Choraria/static/css/main.c9c58ea2.css",
-    "main.js": "/S.Choraria/static/js/main.0a144826.js",
+    "main.js": "/S.Choraria/static/js/main.23a2d3d3.js",
     "static/js/453.90e0c522.chunk.js": "/S.Choraria/static/js/453.90e0c522.chunk.js",
     "index.html": "/S.Choraria/index.html",
     "main.c9c58ea2.css.map": "/S.Choraria/static/css/main.c9c58ea2.css.map",
-    "main.0a144826.js.map": "/S.Choraria/static/js/main.0a144826.js.map",
+    "main.23a2d3d3.js.map": "/S.Choraria/static/js/main.23a2d3d3.js.map",
     "453.90e0c522.chunk.js.map": "/S.Choraria/static/js/453.90e0c522.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9c58ea2.css",
-    "static/js/main.0a144826.js"
+    "static/js/main.23a2d3d3.js"
   ]
 }
