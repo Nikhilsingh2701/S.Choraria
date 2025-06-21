@@ -1,32 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+// import './Navbar.js'; // Ensure styles are imported
 
 const Navbar = () => {
-  const handleServicesClick = (event) => {
-    event.preventDefault();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
     <nav className="navbar">
       <div className="logo"></div>
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/aboutus">About</Link></li>
-        <li><Link to="/industries">Industries</Link></li>
-        <li>
-          <a href="/audit" onClick={handleServicesClick}>Services &#9662;</a>
+
+      {/* Hamburger Icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+
+      <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+        <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+        <li><Link to="/aboutus" onClick={closeMenu}>About</Link></li>
+        <li><Link to="/industries" onClick={closeMenu}>Industries</Link></li>
+        <li className="dropdown-parent">
+          <a href="/audit" onClick={(e) => e.preventDefault()}>Services ▾</a>
           <ul className="dropdown">
-            <li><Link to="/audit">Audit & Assurance</Link></li>
-            <li><Link to="/tax">Tax Advisory</Link></li>
-            <li><Link to="/consulting">Consultancy Services</Link></li>
-            <li><Link to="/roc">Corporate Structuring</Link></li>
-            <li><Link to="/ibc">IBC</Link></li>
-            <li><Link to="/nbfc">RBI Compliance</Link></li>
+            <li><Link to="/audit" onClick={closeMenu}>Audit & Assurance</Link></li>
+            <li><Link to="/tax" onClick={closeMenu}>Tax Advisory</Link></li>
+            <li><Link to="/consulting" onClick={closeMenu}>Consultancy Services</Link></li>
+            <li><Link to="/roc" onClick={closeMenu}>Corporate Structuring</Link></li>
+            <li><Link to="/ibc" onClick={closeMenu}>IBC</Link></li>
+            <li><Link to="/nbfc" onClick={closeMenu}>RBI Compliance</Link></li>
           </ul>
         </li>
-        <li><Link to="/gallery">Gallery</Link></li>
-        <li><Link to="/careers">Careers</Link></li>
-        <li><Link to="/contactus">Contact</Link></li>
+        <li><Link to="/gallery" onClick={closeMenu}>Gallery</Link></li>
+        <li><Link to="/careers" onClick={closeMenu}>Careers</Link></li>
+        <li><Link to="/contactus" onClick={closeMenu}>Contact</Link></li>
       </ul>
     </nav>
   );

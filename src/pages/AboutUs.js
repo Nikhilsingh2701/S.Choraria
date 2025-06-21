@@ -72,9 +72,10 @@ Her long-standing career reflects a blend of technical excellence and practical 
           </div>
         </div>
         <p>
-          Ramesh Verma is a Chartered Accountant with over 15 years of extensive experience in the industry, bringing deep domain knowledge and practical insight to his professional practice. He is presently engaged in Audit & Assurance, Indirect Taxation, and Bank Audits.
-With a strong foundation built through years in the corporate environment, Ramesh offers a well-rounded perspective in handling statutory audits, GST compliance and advisory, internal controls, and audits of public and private sector banks. His methodical approach, attention to detail, and commitment to quality have earned him the trust of clients across sectors.
-Ramesh continues to contribute actively to the profession by combining industry best practices with technical proficiency in every assignment he undertakes.
+         Ramesh Verma is an accomplished Chartered Accountant with over 25 years of experience in the industry, bringing a wealth of practical knowledge and insights to his professional practice. He qualified as a Chartered Accountant in 2005, and has since been actively involved in key areas such as Audit & Assurance, Indirect Taxation, Direct Taxation and Bank Audits.
+His extensive industry background equips him with a deep understanding of business processes, financial controls, and regulatory requirements. Ramesh is known for his structured approach, analytical mindset, and commitment to delivering quality and compliance across all his engagements.
+His current practice spans statutory and internal audits, GST compliance and advisory, and audits of public and private sector banks. Ramesh continues to be a trusted advisor to clients, combining industry expertise with professional excellence.
+
 
         </p>
       </div>
