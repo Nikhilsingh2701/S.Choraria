@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [statusMessage, setStatusMessage] = useState('');
+  const [statusMessage, setStatusMessage] = useState(null);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -14,13 +15,27 @@ const ContactUs = () => {
       return;
     }
 
-    console.log('Form Submitted:', { name, email, message });
+    const serviceID = 'service_mfqt54a';
+    const templateID = 'template_oa2vvk1';
+    const publicKey = 'ZKNn3pNvNWk6yRWB7';
 
-    setStatusMessage({ text: 'Thank you! Your message has been sent.', type: 'success' });
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
 
-    setName('');
-    setEmail('');
-    setMessage('');
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then(() => {
+        setStatusMessage({ text: 'Thank you! Your message has been sent.', type: 'success' });
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error('EmailJS Error:', error);
+        setStatusMessage({ text: 'Failed to send message. Please try again later.', type: 'error' });
+      });
   };
 
   return (
@@ -29,9 +44,7 @@ const ContactUs = () => {
         <h1 className="title">Contact Us</h1>
       </div>
 
-      {/* ✅ Fixed image path */}
-      <img src={`${process.env.PUBLIC_URL}/images/contact.png`} alt="Contact" className="contactImg" />
-      
+      <img src={`${process.env.PUBLIC_URL}/images/contact.webp`} alt="Contact" className="contactImg" />
       <hr />
 
       <h2 className="form-title">Write to Us</h2>
@@ -85,7 +98,7 @@ const ContactUs = () => {
             Room no.- 222 , P-41<br />
             Princep Street, Chandni Chowk<br />
             Kolkata-700072 <br />
-            Ph No.-  033-40054515
+            Ph No.- 033-40054515
           </p>
         </div>
 

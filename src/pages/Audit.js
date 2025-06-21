@@ -8,7 +8,7 @@ const Audit = () => (
     
 
     <div className="divTitle">
-      <h1 className="title">Audit</h1>
+      <h1 className="title">Audit & Assurance</h1>
     </div>
 
    <img src={`${process.env.PUBLIC_URL}/images/audit.webp`} alt="Audit" className="auditImg" />

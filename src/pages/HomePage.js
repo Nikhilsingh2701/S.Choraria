@@ -28,7 +28,6 @@ const services = [
   { img: `${process.env.PUBLIC_URL}/images/bankruptcy.webp`, title: 'IBC SERVICES', link: '/ibc' },
   { img: `${process.env.PUBLIC_URL}/images/roc.webp`, title: 'Company Law Matter', link: '/roc' },
   { img: `${process.env.PUBLIC_URL}/images/nbfc.webp`, title: 'RBI Compliance', link: '/nbfc' },
-  { img: `${process.env.PUBLIC_URL}/images/merge.webp`, title: 'Merger SERVICES', link: '/merge' },
 ];
 
 const industriesData = [

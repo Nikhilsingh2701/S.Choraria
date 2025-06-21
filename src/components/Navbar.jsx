@@ -18,7 +18,6 @@ const Navbar = () => {
           <ul className="dropdown">
             <li><Link to="/audit">Audit & Assurance</Link></li>
             <li><Link to="/tax">Tax Advisory</Link></li>
-            <li><Link to="/merge">Merger & Acquisition</Link></li>
             <li><Link to="/consulting">Consultancy Services</Link></li>
             <li><Link to="/roc">Corporate Structuring</Link></li>
             <li><Link to="/ibc">IBC</Link></li>

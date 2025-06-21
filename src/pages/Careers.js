@@ -1,12 +1,8 @@
-// import React from 'react';
-// import TopBar from '../components/TopBar';
-// import Header from '../components/Header';
-// import Navbar from '../components/Navbar';
+import React from 'react';
 
 const Careers = () => {
   return (
     <>
-
       <div className="divTitle">
         <h1 className="title">Careers</h1>
       </div>
@@ -22,32 +18,44 @@ const Careers = () => {
               </p>
             </div>
 
-            <form>
+            <form
+              name="job-application"
+              method="POST"
+              action="/#/thank-you" 
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              encType="multipart/form-data"
+            >
+              {/* Required for Netlify form processing */}
+              <input type="hidden" name="form-name" value="job-application" />
+              {/* Honeypot field for bots */}
+              <input type="hidden" name="bot-field" />
+
               <div className="form-row">
                 <label className="form-label" htmlFor="applicant-name">Name*</label>
-                <input type="text" id="applicant-name" className="form-input" placeholder="Name" required />
+                <input type="text" id="applicant-name" name="applicant_name" className="form-input" required />
               </div>
 
               <div className="form-row">
                 <label className="form-label" htmlFor="email-address">Email Address*</label>
-                <input type="email" id="email-address" className="form-input" placeholder="Email Address" required />
+                <input type="email" id="email-address" name="email" className="form-input" required />
               </div>
 
               <div className="form-row">
                 <label className="form-label" htmlFor="phone-number">Mobile Number*</label>
-                <input type="tel" id="phone-number" className="form-input" placeholder="Mobile Number" required />
+                <input type="tel" id="phone-number" name="mobile" className="form-input" required />
               </div>
 
               <div className="form-row">
                 <label className="form-label" htmlFor="job-position">Post Applied For*</label>
-                <input type="text" id="job-position" className="form-input" placeholder="Post Applied For" required />
+                <input type="text" id="job-position" name="position" className="form-input" required />
               </div>
 
               <div className="form-row">
                 <label className="form-label" htmlFor="resume-upload">
-                  CV / Resume* <span className="small">(Should not Exceed 50kb)</span>
+                  CV / Resume* <span className="small">(Should not exceed 500kb)</span>
                 </label>
-                <input type="file" id="resume-upload" className="form-file" required />
+                <input type="file" id="resume-upload" name="resume" className="form-file" required />
               </div>
 
               <button type="submit" className="form-button">Apply Now</button>
@@ -101,7 +109,6 @@ const Careers = () => {
           </p>
         </div>
       </div>
-
     </>
   );
 };
