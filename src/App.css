@@ -214,7 +214,7 @@ body{
 /* 3. The main fix for your description block */
 .aboutUsDesc {
   /* This is the standard, reliable way to center a block of content */
-  max-width: 900px; /* This controls the width of your paragraph */
+  max-width: 1250px; /* This controls the width of your paragraph */
   margin: 0 13vw;   
 }
 
@@ -629,6 +629,7 @@ hr{
   line-height: 1.5;
   letter-spacing: 0.4px;
   padding: 0 15vw;
+  text-align: justify;
   
 }
 .homeDesc{
