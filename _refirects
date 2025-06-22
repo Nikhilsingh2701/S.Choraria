@@ -1,0 +1,5 @@
+# Redirect after successful form submission
+/job-application  /thank-you  302
+
+# React routing fallback (required for HashRouter or BrowserRouter)
+/*    /index.html   200
