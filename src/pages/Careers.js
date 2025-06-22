@@ -35,12 +35,12 @@ const Careers = () => {
     const data = new FormData(form); // Create a FormData object from the form
 
     // Append the hidden form-name field. Netlify needs this to identify the form during JavaScript submissions.
-    data.append("form-name", "job-application"); //
+    data.append("form-name", "job-application");
     // Append the honeypot field. Important for bot protection.
-    data.append("bot-field", ""); //
+    data.append("bot-field", "");
 
     try {
-      // Send the form data to Netlify. The URL is typically the root for SPA forms.
+      // Send the form data to Netlify. The URL is typically the root for SPA forms when using fetch.
       // Netlify's backend will detect the form based on 'name' and 'data-netlify' attributes in the deployed HTML.
       const response = await fetch(form.action || '/', { // Use form.action if defined, otherwise default to '/'
         method: 'POST',
@@ -101,15 +101,15 @@ const Careers = () => {
               method="POST"
               action="/pages/ThankYou" // This action is still useful for Netlify's form detection at build time.
                                      // For client-side JS submission, the onSubmit handler takes precedence.
-              data-netlify="true" //
-              data-netlify-honeypot="bot-field" //
-              encType="multipart/form-data" //
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              encType="multipart/form-data"
               onSubmit={handleSubmit} 
             >
               {/* Required for Netlify form processing, especially for React/JS forms */}
-              <input type="hidden" name="form-name" value="job-application" /> {/* */}
+              <input type="hidden" name="form-name" value="job-application" />
               {/* Honeypot field for bots, should be empty */}
-              <input type="hidden" name="bot-field" /> {/* */}
+              <input type="hidden" name="bot-field" />
 
               <div className="form-row">
                 <label className="form-label" htmlFor="applicant-name">Name*</label>
