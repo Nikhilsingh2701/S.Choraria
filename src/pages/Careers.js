@@ -21,7 +21,7 @@ const Careers = () => {
             <form
               name="job-application"
               method="POST"
-              action="/#/thank-you" 
+              action="/" 
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               encType="multipart/form-data"
