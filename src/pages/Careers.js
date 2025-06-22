@@ -42,7 +42,7 @@ const Careers = () => {
     try {
       // Send the form data to Netlify. The URL is typically the root for SPA forms when using fetch.
       // Netlify's backend will detect the form based on 'name' and 'data-netlify' attributes in the deployed HTML.
-      const response = await fetch(form.action || '/', { // Use form.action if defined, otherwise default to '/'
+      const response = await fetch('/', {// Use form.action if defined, otherwise default to '/'
         method: 'POST',
         // DO NOT manually set Content-Type header when sending FormData with file uploads.
         // The fetch API and FormData object will automatically set the correct 'multipart/form-data' header with boundary.

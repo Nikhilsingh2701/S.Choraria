@@ -6,7 +6,7 @@ const galleryItems = [
   { src: `${process.env.PUBLIC_URL}/images/gal3.webp`, alt: "Our Modern Office Space" },
   { src: `${process.env.PUBLIC_URL}/images/gal4.webp`, alt: "Our Dynamic Team" },
   { src: `${process.env.PUBLIC_URL}/images/gal5.webp`, alt: "Industry Seminar" },
-  { src: `${process.env.PUBLIC_URL}/images/gal6.webp`, alt: "Project Beta Launch" },
+  // { src: `${process.env.PUBLIC_URL}/images/gal6.webp`, alt: "Project Beta Launch" },
   { src: `${process.env.PUBLIC_URL}/images/gal7.webp`, alt: "Meeting Room Setup" },
   { src: `${process.env.PUBLIC_URL}/images/gal8.webp`, alt: "Team Fun Day" },
   { src: `${process.env.PUBLIC_URL}/images/gal9.webp`, alt: "Team Fun Day" },
@@ -16,7 +16,7 @@ const galleryItems = [
   { src: `${process.env.PUBLIC_URL}/images/gal14.webp`, alt: "Team Fun Day" },
   // { src: `${process.env.PUBLIC_URL}/images/gal15.webp`, alt: "Team Fun Day" },
   { src: `${process.env.PUBLIC_URL}/images/gal16.jpg`, alt: "Team Fun Day" },
-  { src: `${process.env.PUBLIC_URL}/images/gal17.jpg`, alt: "Team Fun Day" },
+  // { src: `${process.env.PUBLIC_URL}/images/gal17.jpg`, alt: "Team Fun Day" },
 ];
 
 const Gallery = () => {
