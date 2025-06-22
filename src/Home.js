@@ -57,6 +57,11 @@ const AppLayout = () => {
             <a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a>
             <a href="https://www.rbi.org.in/">RBI</a>
             <a href="https://nclt.gov.in">NCLT</a>
+            <a href="https://ibbi.gov.in//en">IBBI</a>
+            <a href="https://www.gst.gov.in/">GST</a>
+            <a href="https://rera.wb.gov.in/">WBRERA</a>
+            <a href="https://msme.gov.in/">MSME</a>
+            <a href="https://www.sebi.gov.in/">SEBI</a>
           </div>
         </div>
         <div className="footer-bottom">

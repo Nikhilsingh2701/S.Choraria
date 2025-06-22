@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const galleryItems = [
-  { src: `${process.env.PUBLIC_URL}/images/gal1.webp`, alt: "Company Annual Meetup" },
+  // { src: `${process.env.PUBLIC_URL}/images/gal1.webp`, alt: "Company Annual Meetup" },
   { src: `${process.env.PUBLIC_URL}/images/gal2.webp`, alt: "Project Alpha Completion" },
   { src: `${process.env.PUBLIC_URL}/images/gal3.webp`, alt: "Our Modern Office Space" },
   { src: `${process.env.PUBLIC_URL}/images/gal4.webp`, alt: "Our Dynamic Team" },
@@ -14,7 +14,7 @@ const galleryItems = [
   { src: `${process.env.PUBLIC_URL}/images/gal11.webp`, alt: "Team Fun Day" },
   { src: `${process.env.PUBLIC_URL}/images/gal12.webp`, alt: "Team Fun Day" },
   { src: `${process.env.PUBLIC_URL}/images/gal14.webp`, alt: "Team Fun Day" },
-  { src: `${process.env.PUBLIC_URL}/images/gal15.webp`, alt: "Team Fun Day" },
+  // { src: `${process.env.PUBLIC_URL}/images/gal15.webp`, alt: "Team Fun Day" },
   { src: `${process.env.PUBLIC_URL}/images/gal16.jpg`, alt: "Team Fun Day" },
   { src: `${process.env.PUBLIC_URL}/images/gal17.jpg`, alt: "Team Fun Day" },
 ];
