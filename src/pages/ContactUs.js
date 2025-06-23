@@ -15,9 +15,9 @@ const ContactUs = () => {
       return;
     }
 
-    const serviceID = 'service_mfqt54a';
-    const templateID = 'template_oa2vvk1';
-    const publicKey = 'ZKNn3pNvNWk6yRWB7';
+    const serviceID = 'service_7o5r56p';
+    const templateID = 'template_frrte1e';
+    const publicKey = 'jRsOjltozmTzUgX39';
 
     const templateParams = {
       from_name: name,
