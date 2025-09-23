@@ -26,7 +26,7 @@ const services = [
   { img: `${process.env.PUBLIC_URL}/images/tax.webp`, title: 'TAX & LEGAL SUPPORT SERVICES', link: '/tax' },
   { img: `${process.env.PUBLIC_URL}/images/consult.webp`, title: 'BUSINESS & CONSULTANCY SERVICES', link: '/consulting' },
   { img: `${process.env.PUBLIC_URL}/images/bankruptcy.webp`, title: 'IBC SERVICES', link: '/ibc' },
-  { img: `${process.env.PUBLIC_URL}/images/roc.webp`, title: 'Company Law Matter', link: '/roc' },
+  { img: `${process.env.PUBLIC_URL}/images/roc.webp`, title: 'Company Law', link: '/roc' },
   { img: `${process.env.PUBLIC_URL}/images/nbfc.webp`, title: 'RBI Compliance', link: '/nbfc' },
 ];
 
@@ -46,13 +46,13 @@ const HomePage = () => {
     <>
       <Slideshow />
       <div className="homeDesc">
-        <p>Established in 1997 and registered with The Institute of Chartered Accountants of India (Registration No. 323475), S.Choraria & Associates is a distinguished Chartered Accountants firm, dedicated to upholding the principles of the Chartered Accountants Act, 1949, and the Chartered Accountants Regulations, 1988.<br></br><br></br>
+        <p>Established in 1997 and registered with The Institute of Chartered Accountants of India (Registration No. 323475), S. Choraria & Associates is a distinguished Chartered Accountants firm, dedicated to upholding the principles of the Chartered Accountants Act, 1949, and the Chartered Accountants Regulations, 1988.<br></br><br></br>
 
 Driven by a mission to honour excellence in the field of Chartered Accountancy, the firm aspires to infuse professionalism into every aspect of its operations, drawing inspiration from professionals worldwide. <br></br><br></br>
 
 Since its inception in 1997, the firm has evolved into a prestigious organization known for its unwavering commitment to the highest standards of professional integrity, ethics, and values.
 
-S.Choraria & Associates has received the coveted peer review certificate from the Peer Review Board of ICAI, New Delhi.</p>
+S. Choraria & Associates has received the coveted peer review certificate from the Peer Review Board of ICAI, New Delhi.</p>
       </div>
 
       {/* --- TEAM SECTION (remains the same) --- */}

@@ -31,10 +31,10 @@ const Industries = () => {
             <img src={`${process.env.PUBLIC_URL}/images/realestate.webp`} alt="Real estate" />
             <p>Real estate</p>   
           </div>
-          <div className="card">
+          {/* <div className="card">
             <img src={`${process.env.PUBLIC_URL}/images/money.webp`} alt="NBFC sector" />
             <p>NBFC sector</p>   
-          </div>
+          </div> */}
           <div className="card">
             <img src={`${process.env.PUBLIC_URL}/images/food.webp`} alt="Restaurant and Food Sector" />
             <p>Restaurant and Food Sector</p>   

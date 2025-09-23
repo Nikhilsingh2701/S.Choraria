@@ -94,7 +94,7 @@ const ContactUs = () => {
         <div className="address">
           <h2>Our Address</h2>
           <p>
-            S.Choraria and Associates<br />
+            S. Choraria and Associates<br />
             Room no.- 222 , P-41<br />
             Princep Street, Chandni Chowk<br />
             Kolkata-700072 <br />

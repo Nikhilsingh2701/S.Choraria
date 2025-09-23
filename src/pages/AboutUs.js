@@ -40,9 +40,9 @@ const AboutUs = () => (
           </div>
         </div>
         <p>
-         Santosh Choraria is a highly respected Chartered Accountant with over 33 years of professional experience in the fields of Audit and Taxation, Corporate Restructuring, Company Law Matters, and Insolvency. He qualified as a Chartered Accountant in 1992, has been in active professional practice ever since.Santosh possesses specialized expertise in Corporate Restructuring and Mergers & Acquisitions, having advised numerous clients on strategic structuring, legal compliance, and transaction execution.
+         Santosh Choraria is a highly respected Chartered Accountant with over 33 years of professional experience in the fields of Audit and Taxation, Corporate Restructuring, Company Law, and Insolvency. He qualified as a Chartered Accountant in 1992, has been in active professional practice ever since. Santosh possesses specialized expertise in Corporate Restructuring and Mergers & Acquisitions, having advised numerous clients on strategic structuring, legal compliance, and transaction execution.
 He has also been a co-opted member of the Direct Tax Committee of the Institute of Chartered Accountants of India (ICAI) for the year 2012–13, and a Registered Insolvency Professional (IP) with the Insolvency and Bankruptcy Board of India (IBBI).
-In addition to his professional practice. he served as the Convener of the Views Exchange Chartered Accountants Study Circle – EIRC in 2011–12, and remains actively associated with various CA Study Circles in Kolkata.
+In addition to his professional practice. He served as the Convener of the Views Exchange Chartered Accountants Study Circle – EIRC in 2011–12, and remains actively associated with various CA Study Circles in Kolkata.
 He is also a member of the Direct Tax Committee of the Bharat Chamber of Commerce and a proud member of the St. Xavier's Alumni Association, reflecting his commitment to both the profession and the broader business community.
 
         </p>
@@ -50,7 +50,7 @@ He is also a member of the Direct Tax Committee of the Bharat Chamber of Commerc
 
       <div className="our-team-member-card">
         <div className="team-wrapper">
-          <img src={`${process.env.PUBLIC_URL}/images/seema.webp`} alt="Seema Choraria" className="team-member-image" />
+          <img src={`${process.env.PUBLIC_URL}/images/seema.jpg`} alt="Seema Choraria" className="team-member-image" />
           <div className="team-details">
             <h2>Seema Choraria</h2>
             <div className="our-team-member-designation">FCA, CS</div>
@@ -58,7 +58,7 @@ He is also a member of the Direct Tax Committee of the Bharat Chamber of Commerc
         </div>
         <p>
          Seema Choraria is a seasoned Chartered Accountant with over 28 years of professional experience in the fields of Audit and Taxation. She qualified as a Chartered Accountant in 1997, earning the distinction of being a Merit Holder in the CA Final Examination on an All India basis.
-With deep expertise spanning across statutory audits, tax audits, and direct taxation matters, Seema has built a strong reputation for her analytical acumen, meticulous approach, and unwavering commitment to professional ethics. Her extensive experience includes advising corporates, firms, and individuals on complex audit and tax issues, compliance, and strategic planning.
+With deep expertise spanning across statutory audits, tax audits, and direct taxation, Seema has built a strong reputation for her analytical acumen, meticulous approach, and unwavering commitment to professional ethics. Her extensive experience includes advising corporates, firms, and individuals on complex audit and tax issues, compliance, and strategic planning.
 Her long-standing career reflects a blend of technical excellence and practical insight, making her a trusted advisor and a valuable asset to her clients and the profession.
    </p>
       </div>
