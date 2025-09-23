@@ -17,7 +17,7 @@ import 'swiper/css/autoplay';
 // --- Data (remains the same) ---
 const teamMembers = [
   { img: `${process.env.PUBLIC_URL}/images/santosh.webp`, name: 'CA Santosh Choraria', position: 'Managing Partner', description: 'Fellow Member of the ICAI.' },
-  { img: `${process.env.PUBLIC_URL}/images/seema.webp`, name: 'CA Seema Choraria', position: 'Partner', description: 'Fellow Member of ICAI.' },
+  { img: `${process.env.PUBLIC_URL}/images/seema.jpg`, name: 'CA Seema Choraria', position: 'Partner', description: 'Fellow Member of ICAI.' },
   { img: `${process.env.PUBLIC_URL}/images/ramesh.webp`, name: 'CA Ramesh Kumar Verma', position: 'Partner', description: 'Associate Member of ICAI.' },
 ];
 
